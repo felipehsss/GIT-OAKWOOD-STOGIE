@@ -7,6 +7,9 @@ export default function Home() {
     return (
         <>
             <Header />
+            <div className="logo-principal">
+                <img src="" alt="" />
+            </div>
         </>
     );
 }
