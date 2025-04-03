@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Header from '../header/header';
+import Header from '../Header/Header';
 
 export default function Home() {
     return (
