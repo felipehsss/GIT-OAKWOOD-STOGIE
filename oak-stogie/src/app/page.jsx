@@ -1,15 +1,12 @@
 'use client';
 
-import { useState} from 'react';
+import { useState } from 'react';
+import Header from '../header/header';
 
 export default function Home() {
-  return (
-    <>
-      <header>
-        <nav>
-          <div className="logozinha"></div>
-        </nav>
-      </header>
-    </>
-  )
+    return (
+        <>
+            <Header />
+        </>
+    );
 }
