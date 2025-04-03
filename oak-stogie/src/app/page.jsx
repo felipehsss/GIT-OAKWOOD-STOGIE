@@ -2,29 +2,15 @@
 
 import { useState } from 'react';
 import Header from '../Header/Header';
+import './homecharuto.css';
 
 export default function Home() {
-<<<<<<< HEAD
-  return (
-    <>
-      <header>
-        <nav>
-          <div className="logozinha">
-
-            <img src="/public/image-logo/page-2.jpeg" alt="" />
-          </div>
-        </nav>
-      </header>
-    </>
-  )
-=======
     return (
         <>
             <Header />
-            <div className="logo-principal">
-                <img src="" alt="" />
+            <div className="container d-flex justify-content-center">
+                <img className="img-fluid imagem-principal" src="/imagem-home/imagem-principal-home.jpg" alt="" />
             </div>
         </>
     );
->>>>>>> 93df57d14269f658bd5b97ac1af5d4729e684875
 }

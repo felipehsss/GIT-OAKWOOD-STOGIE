@@ -1,0 +1,16 @@
+html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+}
+
+.container {
+    width: 100%; /* Ensure the container spans the full width */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+.imagem-principal {
+    width: 100%; /* Set to full width */
+    height: auto; /* Maintain aspect ratio */
+}
