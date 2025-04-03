@@ -7,7 +7,10 @@ export default function Home() {
     <>
       <header>
         <nav>
-          <div className="logozinha"></div>
+          <div className="logozinha">
+
+            <img src="/public/image-logo/page-2.jpeg" alt="" />
+          </div>
         </nav>
       </header>
     </>
