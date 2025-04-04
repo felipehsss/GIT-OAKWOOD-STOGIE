@@ -7,16 +7,16 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="logo">
-                <img src="/image-logo/page-2.jpeg" class="img-thumbnail" alt="Logo"></img>
+                <img src="/image-logo/page-2.jpeg" className="img-thumbnail" alt="Logo"></img>
             </div>
             <div className="infs">
-                <div class="container text-center">
-                    <div class="row align-items-end">
-                        <div class="col">
+                <div className="container text-center">
+                    <div className="row align-items-end">
+                        <div className="col">
                             <h1>Oakwood Stogies</h1> <br />
                             A Oakwood Stogies é uma empresa especializada na produção e comercialização de charutos premium, reconhecida por sua tradição artesanal e compromisso com a qualidade. Utilizando tabacos selecionados de regiões renomadas, a Oakwood Stogies combina técnicas clássicas com um toque contemporâneo, resultando em charutos encorpados, bem equilibrados e com sabores marcantes. Seu nome remete à robustez do carvalho (“oakwood”), refletindo a elegância e sofisticação presentes em cada produto. Ideal para apreciadores exigentes, a marca se destaca no mercado por sua autenticidade e dedicação à experiência do fumante.
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <h4>Institucional</h4>
                             <p>Sobre a Oakwood Stogies</p>
                             <p>Autenticidade dos Charutos</p>
@@ -27,7 +27,7 @@ const Footer = () => {
                             <span ><FontAwesomeIcon icon={faPhone} /> (11) 99999-9999 </span> <br />
                             <span> <FontAwesomeIcon icon={faEnvelope} /> oakwood.stogies@gmail.com</span>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             <h4>Minha Conta</h4>
                             <p>Meus Pedidos</p>
                             <p>Endereço de Entrega</p>
@@ -35,7 +35,7 @@ const Footer = () => {
 
                         </div>
 
-                        <div class="col">
+                        <div className="col">
                             
 
                         </div>
