@@ -7,19 +7,19 @@ const Header = () => {
 
             <div className="row">
             <div className="col ">
-                <img src="/image-logo/page-2.jpeg"  className='img-fluid' alt="Logo" />
+                <img src="/image-logo/page-2.jpeg"  className='img-fluid img-logo' alt="Logo" />
             </div>
             
-            <nav className="col ">
-                <a className='nav-link' href="/Home">Home</a>
+            <nav className="col nav">
+                <a className='nav-link' href="/">Home</a>
                 <a className='nav-link' href="/about">About</a>
                 <a className='nav-link' href="/contact">Contact</a>
                 <a className='nav-link' href="/produtos">Produtos</a>
             </nav>
 
-            <div className="col ">
-                <a href="/login">Login</a>
-                <a href="/signup">Sign Up</a>
+            <div className="col login-signup">
+                <a href="/login" className='btn btn-outline-light'>Login</a>
+                <a href="/signup" className='btn btn-outline-light'>Sign Up</a>
             </div>
             </div>
 
