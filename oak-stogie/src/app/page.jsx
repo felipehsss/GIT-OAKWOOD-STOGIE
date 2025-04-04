@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Header from '../Header/Header';
+import Header from '../components/Header/Header';
 import './homecharuto.css';
 
 export default function Home() {
