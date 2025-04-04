@@ -1,6 +1,8 @@
 import React from "react";
 import './Footer.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Footer = () => {
     return (
         <footer className="footer">
@@ -21,11 +23,21 @@ const Footer = () => {
                             <p>Blog</p>
                             <p>Como fumar charutos - Guia para iniciantes</p> <br />
 
-                            <h4>Contato </h4>
-                            <span ></span>
+                            <h4>Contato</h4>
+                            <span ><FontAwesomeIcon icon={faPhone} /> (11) 99999-9999 </span> <br />
+                            <span> <FontAwesomeIcon icon={faEnvelope} /> oakwood.stogies@gmail.com</span>
                         </div>
                         <div class="col">
-                            One of three columns
+                            <h4>Minha Conta</h4>
+                            <p>Meus Pedidos</p>
+                            <p>Endereço de Entrega</p>
+                            <p>Alterar Dados</p>
+
+                        </div>
+
+                        <div class="col">
+                            
+
                         </div>
                     </div>
                 </div>
