@@ -1,4 +1,22 @@
 .header{
     background-color: black;
     width: 100%;
+    font-family: 'Berkervville', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav a{
+    color: white;
+}
+.login-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px   ;
+}
+.img-logo{
+    width: 300px;
 }
