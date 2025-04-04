@@ -6,6 +6,7 @@ import Questions from '../components/Questions/Questions';
 // import '@fortawesome/fontawesome-svg-core/styles.css'
 // import { config } from '@fortawesome/fontawesome-svg-core'
 // config.autoAddCss = false // Evita que o CSS seja adicionado automaticamente
+
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false
