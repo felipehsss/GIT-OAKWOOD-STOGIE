@@ -1,16 +1,29 @@
-@import "tailwindcss";
+
+
 
 @font-face {
   font-family: 'Corleone';
   src: url('/fonts/Corleone-Regular.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
-} /*! quando for usar "Font-Family= Corleone", sans serif  */
+  /*! quando for usar "Font-Family= Corleone", sans serif  */
+
+} 
+
+@font-face {
+  font-family: 'Berkervville';
+  src: url('/fonts/Baskervville-Regular.ttf') format('truetype');
+   /* Quando for usar
+  font-family: 'Berkervville', sans-serif; */
+}
+
+
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+
 
 @theme inline {
   --color-background: var(--background);
@@ -31,3 +44,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
