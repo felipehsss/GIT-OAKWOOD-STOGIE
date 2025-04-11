@@ -7,12 +7,12 @@ import "./home.css";
 export default function Home() {
   return (
     <>
-      <div className="container-fluid d-flex justify-content-center align-items-center p-0">
+      <div className="container-fluid d-flex justify-content-center align-items-center p-0 container-imagem-home">
         <img
           className="img-fluid imagem-principal"
-          src="/imagem-home/imagem-principal-home.jpg"
+          src="/imagem-home/downloadedImage (7).png"
           alt="Imagem Principal"
-          style={{ objectFit: "cover", height: "100vh", width: "100%" }}
+          
         />
       </div>
     </>
