@@ -3,6 +3,7 @@ import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Footer from '../components/Footer/Footer';
 import Questions from '../components/Questions/Questions';
+import Stogies from '@/components/Stogies/Stogies';
 
 // import '@fortawesome/fontawesome-svg-core/styles.css'
 // import { config } from '@fortawesome/fontawesome-svg-core'
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
 
         {children}
 
+        <Stogies/>
 
 
         <Questions />

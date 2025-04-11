@@ -15,3 +15,5 @@ const Stogies = () => {
         </div>
     );
 }
+
+export default Stogies
