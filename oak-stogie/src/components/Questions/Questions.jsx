@@ -1,6 +1,8 @@
 import React from "react";
 import './Questions.css';
 
+
+
 const Questions = () => {
     return (
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -38,3 +40,5 @@ const Questions = () => {
     );
 
 }
+
+export default Questions
