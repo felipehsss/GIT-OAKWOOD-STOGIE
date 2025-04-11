@@ -33,6 +33,14 @@
     text-align: left;
 }
 
+
+.coluna1,
+.coluna2,
+.coluna3,
+.coluna4 a {
+    text-decoration: none;
+}
+
 .coluna1,
 .coluna2,
 .coluna3,
