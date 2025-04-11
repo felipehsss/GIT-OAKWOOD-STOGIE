@@ -13,7 +13,7 @@ const Stogies = () => {
         if (myCarouselElement && typeof window !== 'undefined') {
             import('bootstrap').then(({ Carousel }) => {
                 new Carousel(myCarouselElement, {
-                    interval: 2000,
+                    interval: 4000,
                     touch: false,
                 });
             });
