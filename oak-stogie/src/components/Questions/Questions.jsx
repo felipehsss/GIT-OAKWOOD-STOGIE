@@ -1,6 +1,11 @@
 import React from "react";
 import './Questions.css';
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 09aba20f82e81875b93b0e1af5f2fe058e39b61b
 const Questions = () => {
     return (
         <div class="accordion accordion-flush" id="accordionFlushExample">
