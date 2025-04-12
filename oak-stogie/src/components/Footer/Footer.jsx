@@ -13,25 +13,25 @@ const Footer = () => {
                 <div className="container text-center">
                     <div className="row rowfooter align-items-end">
                         <div className="col coluna1">
-                            <h1>Oakwood Stogies</h1> <br />
+                            <h1>Oakwood Stogies</h1>
                             A Oakwood Stogies é uma empresa especializada na produção e comercialização de charutos premium, reconhecida por sua tradição artesanal e compromisso com a qualidade. Utilizando tabacos selecionados de regiões renomadas, a Oakwood Stogies combina técnicas clássicas com um toque contemporâneo, resultando em charutos encorpados, bem equilibrados e com sabores marcantes.
                         </div>
                         <div className="col coluna2">
                             <h4>Institucional</h4>
-                            <p>Sobre a Oakwood Stogies</p>
-                            <p>Autenticidade dos Charutos</p>
-                            <p>Blog</p>
-                            <p>Como fumar charutos - Guia para iniciantes</p> <br />
+                            <p> <a href="">Sobre a Oakwood Stogies</a> </p>
+                            <p> <a href="">Autenticidade dos Charutos</a></p>
+                            <p> <a href="">Blog</a> </p>
+                            <p> <a href="">Como fumar charutos - Guia para iniciantes</a></p> <br />
 
                             <h4>Contato</h4>
-                            <span ><FontAwesomeIcon icon={faPhone} /> (11) 99999-9999 </span> <br />
-                            <span> <FontAwesomeIcon icon={faEnvelope} /> oakwood.stogies@gmail.com</span>
+                            <span ><FontAwesomeIcon icon={faPhone} /> <a href="">(11) 99999-9999</a>  </span> <br />
+                            <span> <FontAwesomeIcon icon={faEnvelope} /> <a href="">oakwood.stogies@gmail.com</a> </span>
                         </div>
                         <div className="col coluna3">
                             <h4>Minha Conta</h4>
-                            <p> Meus Pedidos</p>
-                            <p>Endereço de Entrega</p>
-                            <p>Alterar Dados</p>
+                            <p> <a href="">Meus Pedidos</a> </p>
+                            <p> <a href="">Endereço de Entrega</a></p>
+                            <p> <a href="">Alterar Dados</a></p>
 
                         </div>
 
