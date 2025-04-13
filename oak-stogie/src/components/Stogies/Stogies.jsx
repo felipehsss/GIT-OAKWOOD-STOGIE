@@ -51,21 +51,21 @@ const Stogies = () => {
                     {/* // SLIDE 333 */}
                     <div className="carousel-item">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-9">.col-9</div>
-                                <div class="col-4">.col-4Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
-                                <div class="col-6">.col-6 Subsequent columns continue along the new line.</div>
+                            <div className="row">
+                                <div className="col-9">.col-9</div>
+                                <div className="col-4">.col-4Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+                                <div className="col-6">.col-6 Subsequent columns continue along the new line.</div>
                             </div>
                         </div>
                     </div>
 
                     {/* // SLIDE 444 */}
                     <div className="carousel-item">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-9">.col-9</div>
-                                <div class="col-4">.col-4Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
-                                <div class="col-6">.col-6 Subsequent columns continue along the new line.</div>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-9">.col-9</div>
+                                <div className="col-4">.col-4Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+                                <div className="col-6">.col-6 Subsequent columns continue along the new line.</div>
                             </div>
                         </div>
                     </div>
