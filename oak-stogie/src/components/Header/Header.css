@@ -1,25 +1,47 @@
-.header{
+.header {
     background-color: black;
     width: 100%;
     font-family: 'Berkervville', sans-serif;
 }
-.nav{
+.nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav a{
+.nav a {
     color: white;
 }
-.login-signup{
+.login-signup {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px   ;
+    gap: 10px;
 }
-.img-logo{
+.img-logo {
     width: 200px;
 }
-.navbar-background-color{
+.navbar-background-color {
     background-color: black;
+}
+
+/* Efeito de hover personalizado */
+.nav-link {
+    position: relative;
+    padding-bottom: 2px;
+    text-decoration: none !important;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 0.5rem);
+    height: 1px;
+    bottom: 0;
+    left: 0.25rem;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s ease;
+}
+.nav-link:hover::after {
+    transform: scaleX(1);
 }
