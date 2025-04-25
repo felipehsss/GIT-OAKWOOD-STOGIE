@@ -1,5 +1,11 @@
 import React from 'react';
 import './Header.css'; 
+import { useCart } from "@/context/CartContext";
+import { useState } from "react";
+
+
+export default function Header() {
+  const { cart } = useCart();
 
 const Header = () => {
     return (
@@ -23,12 +29,26 @@ const Header = () => {
             <div className='d-flex gap-3'>
             <a href="/login" className='btn btn-outline-light'>Login</a>
             <a href="/signup" className='btn btn-outline-light'>Sign Up</a>
+            <a className="nav-link" href="/cart">Carrinho</a>
             </div>
           </div>
+          <button
+        className="btn btn-outline-light position-relative"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#cartCanvas"
+      >
+        🛒 Carrinho
+        {cart.length > 0 && (
+          <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            {cart.length}
+          </span>
+        )}
+      </button>
         </div>
       </nav>
 
     );
+}
 };
 
-export default Header;
