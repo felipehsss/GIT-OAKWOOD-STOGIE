@@ -21,7 +21,7 @@ config.autoAddCss = false // Evita que o CSS seja adicionado automaticamente
 export default function RootLayout({ children }) {
   const pathname = usePathname(); // Obtém a rota atual
 
-  const shouldRenderStogiesAndQuestions = pathname !== '/Produtos'; // Evitar esses componentes na página de Produtos
+  const shouldRenderStogiesAndQuestions = pathname !== '/Produtos' && pathname !== '/Pagamento' && pathname !== '/Link'; // Evitar esses componentes na página de Produtos
   return (
     <html lang="pt-br">
 
@@ -35,9 +35,10 @@ export default function RootLayout({ children }) {
         {children}
 
         {shouldRenderStogiesAndQuestions && <Stogies />}
-        <Link href="/Produtos">
+        {shouldRenderStogiesAndQuestions && <Link href="/Produtos">
           <button>Veja Mais</button>
-        </Link>
+        </Link>}
+        
         {shouldRenderStogiesAndQuestions && <Questions />}
         {/* <Stogies/> */}
 
