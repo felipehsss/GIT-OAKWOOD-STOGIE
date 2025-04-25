@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Footer from '../components/Footer/Footer';
 import Questions from '../components/Questions/Questions';
 import Stogies from '@/components/Stogies/Stogies';
+import { CartProvider } from '../context/CartContext';
+
 
 // import '@fortawesome/fontawesome-svg-core/styles.css'
 // import { config } from '@fortawesome/fontawesome-svg-core'
@@ -23,6 +25,8 @@ export default function RootLayout({ children }) {
 
       <body>
 
+      <CartProvider>
+
 
         <Header />
 
@@ -33,7 +37,8 @@ export default function RootLayout({ children }) {
 
 
         <Questions />
-
+       
+      </CartProvider>
 
         <Footer />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossOrigin="anonymous"></script>
