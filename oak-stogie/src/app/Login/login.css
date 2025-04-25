@@ -1,0 +1,22 @@
+/* Classe de Gradiente Radial */
+.background-radial-gradient {
+  background-color: hsl(0, 0%, 0%); /* Cor de fundo base */
+ 
+}
+
+/* Efeito de "vidro" */
+.bg-glass {
+  background-color: hsla(0, 0%, 100%, 0.9) !important; /* Fundo branco semi-transparente */
+  backdrop-filter: saturate(200%) blur(25px); /* Efeito de desfocagem e saturação */
+}
+
+/* Estilo geral de posicionamento do container */
+.container {
+  position: relative; /* Necessário para que o posicionamento absoluto funcione */
+  width: 100%;
+  height: 100vh; /* O container ocupa a altura inteira da tela */
+}
+.font-da-primeira{
+  font-family: 'Corleone', sans-serif;
+}
+  

@@ -2,8 +2,12 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header/Header";
 import "./home.css";
+<<<<<<< HEAD
 import Link from 'next/link';
 
+=======
+import Stogies from '@/components/Stogies/Stogies';
+>>>>>>> fff857f6d4bdc7dcbf06b5df3662849c3d4921b9
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorParticles, setCursorParticles] = useState([]);
@@ -103,10 +107,15 @@ export default function Home() {
           ))} */}
         </div>
       </main>
+<<<<<<< HEAD
    
       <div className='d-flex gap-3 justify-content-center m-10'>
             <a href="/produtos" className='btn btn-outline-light'>Veja Mais</a>
             </div>
+=======
+
+      <section> <Stogies/></section>
+>>>>>>> fff857f6d4bdc7dcbf06b5df3662849c3d4921b9
     </>
   );
 }

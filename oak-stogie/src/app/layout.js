@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        <Stogies/>
+       
 
 
         <Questions />
