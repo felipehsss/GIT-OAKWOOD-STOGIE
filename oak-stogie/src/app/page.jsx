@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header/Header";
 import "./home.css";
-
+import Stogies from '@/components/Stogies/Stogies';
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorParticles, setCursorParticles] = useState([]);
@@ -102,6 +102,8 @@ export default function Home() {
           ))} */}
         </div>
       </main>
+
+      <section> <Stogies/></section>
     </>
   );
 }

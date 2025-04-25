@@ -21,8 +21,8 @@ const Header = () => {
             </ul>
             
             <div className='d-flex gap-3'>
-            <a href="/login" className='btn btn-outline-light'>Login</a>
-            <a href="/signup" className='btn btn-outline-light'>Sign Up</a>
+            <a href="/Login" className='btn btn-outline-light'>Sign In</a>
+            <a href="/Sign" className='btn btn-outline-light'>Sign Up</a>
             </div>
           </div>
         </div>

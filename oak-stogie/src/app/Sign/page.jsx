@@ -2,9 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import './login.css';
+import './sign.css';
 
-export default function Login() {
+export default function Sign() {
   return (
     <>
       {/* <!-- Section: Design Block --> */}
@@ -12,7 +12,7 @@ export default function Login() {
         <div className="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
           <div className="row gx-lg-5 align-items-center mb-5">
             <div className="col-lg-6 mb-5 mb-lg-0" style={{ zIndex: 10 }}>
-              <h1 className="my-5 display-5 fw-bold ls-tight font-da-primeira" style={{ color: 'hsl(218, 81%, 95%)' }}>
+              <h1 className="my-5 display-5 fw-bold ls-tight" style={{ color: 'hsl(218, 81%, 95%)' }}>
               Uma Jornada de Sabor e Tradição:<br />  
                 <span style={{ color: 'red' }}>Os Melhores Charutos para Você</span>
               </h1>
@@ -31,7 +31,20 @@ Cadastre-se e comece agora sua jornada rumo ao prazer do charuto perfeito. O mel
                 <div className="card-body px-4 py-5 px-md-5">
                   <form>
                     {/* <!-- 2 column grid layout with text inputs for the first and last names --> */}
-                   
+                    <div className="row">
+                      <div className="col-md-6 mb-4">
+                        <div data-mdb-input-init className="form-outline">
+                          <input type="text" id="form3Example1" className="form-control" />
+                          <label className="form-label" htmlFor="form3Example1">First name</label>
+                        </div>
+                      </div>
+                      <div className="col-md-6 mb-4">
+                        <div data-mdb-input-init className="form-outline">
+                          <input type="text" id="form3Example2" className="form-control" />
+                          <label className="form-label" htmlFor="form3Example2">Last name</label>
+                        </div>
+                      </div>
+                    </div>
 
                     {/* <!-- Email input --> */}
                     <div data-mdb-input-init className="form-outline mb-4">

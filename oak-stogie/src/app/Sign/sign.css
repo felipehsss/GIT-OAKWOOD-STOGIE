@@ -1,7 +1,7 @@
 /* Classe de Gradiente Radial */
 .background-radial-gradient {
   background-color: hsl(0, 0%, 0%); /* Cor de fundo base */
- 
+  background-image: ;
 }
 
 /* Efeito de "vidro" */
@@ -16,7 +16,5 @@
   width: 100%;
   height: 100vh; /* O container ocupa a altura inteira da tela */
 }
-.font-da-primeira{
-  font-family: 'Corleone', sans-serif;
-}
+
   
