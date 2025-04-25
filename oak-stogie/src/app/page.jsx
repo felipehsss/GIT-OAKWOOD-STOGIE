@@ -8,7 +8,7 @@ export default function Home() {
   const [cursorParticles, setCursorParticles] = useState([]);
   const [sideParticles, setSideParticles] = useState([]);
 
-  // Efeito do cursor
+  // Efeito do cursor ssssssssssssssss
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
