@@ -1,3 +1,50 @@
-back-preto{
+.back-preto {
   background-color: black;
 }
+
+/* Style for carousel row to position buttons */
+.carousel-inner .row.position-relative {
+  position: relative;
+}
+
+/* Style for custom prev button */
+.custom-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 10;
+}
+
+/* Style for custom next button */
+.custom-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 10;
+}
+
+/* Adjust button icon size */
+.custom-prev .carousel-control-prev-icon,
+.custom-next .carousel-control-next-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: 100% 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-prev {
+    left: 0.5rem;
+  }
+  .custom-next {
+    right: 0.5rem;
+  }
+}
+
+

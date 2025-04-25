@@ -1,3 +1,7 @@
+body{
+  background-color: #000;
+}
+
 .imagem-principal {
   object-fit: cover;
   display: block;

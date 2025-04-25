@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header/Header";
 import "./home.css";
+import Link from 'next/link';
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -12,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
-      
+
       setCursorParticles(prev => [
         ...prev.slice(-4),
         {
@@ -33,7 +34,7 @@ export default function Home() {
   //   const createSideParticles = () => {
   //     const container = document.querySelector('.container-imagem-home');
   //     if (!container) return;
-      
+
   //     const containerRect = container.getBoundingClientRect();
   //     const newParticles = [];
 
@@ -76,7 +77,7 @@ export default function Home() {
           />
           {/* Partículas do cursor */}
           {cursorParticles.map((particle) => (
-            <div 
+            <div
               key={particle.id}
               className="cursor-smoke"
               style={{
@@ -102,6 +103,10 @@ export default function Home() {
           ))} */}
         </div>
       </main>
+   
+      <div className='d-flex gap-3 justify-content-center m-10'>
+            <a href="/produtos" className='btn btn-outline-light'>Veja Mais</a>
+            </div>
     </>
   );
 }
