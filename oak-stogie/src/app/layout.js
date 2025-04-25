@@ -1,13 +1,15 @@
+"use client";
 import Header from '../components/Header/Header';
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Footer from '../components/Footer/Footer';
 import Questions from '../components/Questions/Questions';
 import Stogies from '@/components/Stogies/Stogies';
-
+import { usePathname } from 'next/navigation';
 // import '@fortawesome/fontawesome-svg-core/styles.css'
 // import { config } from '@fortawesome/fontawesome-svg-core'
 // config.autoAddCss = false // Evita que o CSS seja adicionado automaticamente
+import Link from 'next/link';
 
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -17,8 +19,11 @@ config.autoAddCss = false // Evita que o CSS seja adicionado automaticamente
 
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname(); // Obtém a rota atual
+
+  const shouldRenderStogiesAndQuestions = pathname !== '/Produtos'; // Evitar esses componentes na página de Produtos
   return (
-    <html lang="en">
+    <html lang="pt-br">
 
 
       <body>
@@ -29,10 +34,18 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        <Stogies/>
+        {shouldRenderStogiesAndQuestions && <Stogies />}
+        <Link href="/Produtos">
+          <button>Veja Mais</button>
+        </Link>
+        {shouldRenderStogiesAndQuestions && <Questions />}
+        {/* <Stogies/> */}
+
+        
+        {/* <Produtos /> */}
 
 
-        <Questions />
+        {/* <Questions /> */}
 
 
         <Footer />
