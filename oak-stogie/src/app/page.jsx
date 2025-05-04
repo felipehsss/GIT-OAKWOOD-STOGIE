@@ -2,120 +2,117 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header/Header";
 import "./home.css";
-<<<<<<< HEAD
-import Link from 'next/link';
+import Link from "next/link";
 
-=======
-import Stogies from '@/components/Stogies/Stogies';
->>>>>>> fff857f6d4bdc7dcbf06b5df3662849c3d4921b9
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorParticles, setCursorParticles] = useState([]);
   const [sideParticles, setSideParticles] = useState([]);
 
-  // Efeito do cursor ssssssssssssssss
+  // Efeito do cursor
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
 
-      setCursorParticles(prev => [
+      setCursorParticles((prev) => [
         ...prev.slice(-4),
         {
           id: Date.now(),
           x: e.clientX,
           y: e.clientY,
-          size: Math.random() * 20 + 60 // 60-80px
-        }
+          size: Math.random() * 20 + 60, // 60-80px
+        },
       ]);
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  // // Efeito das fumaças laterais
-  // useEffect(() => {
-  //   const createSideParticles = () => {
-  //     const container = document.querySelector('.container-imagem-home');
-  //     if (!container) return;
-
-  //     const containerRect = container.getBoundingClientRect();
-  //     const newParticles = [];
-
-  //     // Fumaça da esquerda (mais próxima da imagem)
-  //     newParticles.push({
-  //       id: `left-${Date.now()}`,
-  //       startX: containerRect.left + 30,
-  //       startY: containerRect.top + containerRect.height * 0.7,
-  //       direction: 'right',
-  //       size: 120
-  //     });
-
-  //     // Fumaça da direita (posição ajustada para visibilidade)
-  //     newParticles.push({
-  //       id: `right-${Date.now()}`,
-  //       startX: containerRect.right - 50,  // Aumentei a distância da borda
-  //       startY: containerRect.top + containerRect.height * 0.65,  // Subi um pouco
-  //       direction: 'left',
-  //       size: 140  // Aumentei o tamanho
-  //     });
-
-  //     setSideParticles(prev => [...prev.slice(-10), ...newParticles]);
-
-  //     const interval = setInterval(createSideParticles, 4000);
-  //     return () => clearInterval(interval);
-  //   };
-
-  //   const timeout = setTimeout(createSideParticles, 1000);
-  //   return () => clearTimeout(timeout);
-  // }, []);
+  const brands = [
+      { id: 1, name: "Marca A", path: "b1.png" },
+      { id: 2, name: "Marca B", path: "b7.png" },
+      { id: 3, name: "Marca C", path: "b3.png" },
+      { id: 4, name: "Marca D", path: "b4.png" },
+      { id: 5, name: "Marca E", path: "b5.png" },
+      { id: 6, name: "Marca F", path: "b6.png" }
+  ];
+  
 
   return (
     <>
       <main className="parallax_placeholder">
         <div className="container-fluid d-flex justify-content-center align-items-center p-0 container-imagem-home">
           <img
-            className="img-fluid imagem-principal mx-auto"  // mx-auto para centralizar
+            className="img-fluid imagem-principal mx-auto" // mx-auto para centralizar
             src="/imagem-home/downloadedImage (7).png"
             alt="Imagem Principal"
           />
+
           {/* Partículas do cursor */}
           {cursorParticles.map((particle) => (
             <div
               key={particle.id}
               className="cursor-smoke"
               style={{
-                left: `${particle.x - 30}px`,
-                top: `${particle.y - 30}px`,
+                left: `${particle.x - 25}px`,
+                top: `${particle.y - 75}px`,
                 width: `60px`,
                 height: `60px`,
               }}
             />
           ))}
-          {/* Fumaças laterais
-          {sideParticles.map((particle) => (
-            <div 
-              key={particle.id}
-              className={`side-smoke ${particle.direction}`}
-              style={{
-                left: `${particle.startX}px`,
-                top: `${particle.startY}px`,
-                width: `${particle.size}px`,
-                height: `${particle.size}px`,
-              }}
-            />
-          ))} */}
         </div>
       </main>
-<<<<<<< HEAD
-   
-      <div className='d-flex gap-3 justify-content-center m-10'>
-            <a href="/produtos" className='btn btn-outline-light'>Veja Mais</a>
-            </div>
-=======
 
-      <section> <Stogies/></section>
->>>>>>> fff857f6d4bdc7dcbf06b5df3662849c3d4921b9
+      {/*--------------marcas que trabalhamos*/}
+      <section className="container my-5 text-white">
+  <h2 className="text-center mb-4 corleone-font h3 frase-brand">
+    Juntos de quem compartilha nossa paixão por qualidade, tradição e prestígio.
+  </h2>
+
+  <div className="row justify-content-center align-items-center g-3">
+    {brands.map((brand) =>( 
+      <div key={brand.id} className="col-4 col-sm-3 col-md-2">
+        <div className="card border-0 shadow-sm bg-transparent">
+          <img
+            src={`/brands/${brand.path}`}
+            alt={`Marca ${brand.name}`}
+            className="img-fluid card-img-top logo-parceira p-2"
+          />
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+
+      {/* BANNER COM PRODUTOS */}
+      <section className="container-fluid position-relative d-flex justify-content-center mt-20 pt-5">
+        <img
+          src="/image-sections-page/grupo_amigos.png"
+          alt=""
+          className="img-fluid w-50 "
+        />
+
+        <div className="position-absolute  top-50 start-50 translate-middle text-center text-white">
+          <h1 class="display-4 fw-bold corleone-font">
+            Descubra o Sabor da Exclusividade
+          </h1>
+          <a
+            href="#"
+            class="btn btn-danger mt-3 fw-semibold shadow berkervville-font"
+          >
+            Conheça a Edição Capadeoro
+          </a>
+        </div>
+      </section>
+
+      <div className="d-flex gap-3 justify-content-center m-10">
+        <a href="/produtos" className="btn btn-outline-light">
+          Veja Mais
+        </a>
+      </div>
     </>
   );
 }

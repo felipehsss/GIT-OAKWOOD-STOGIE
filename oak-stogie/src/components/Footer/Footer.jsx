@@ -5,7 +5,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer berkervville-font">
             <div className="logofooter">
                 <img src="/image-logo/page-2.jpeg" className="img-thumbnail" alt="Logo"></img>
             </div>
@@ -13,22 +13,22 @@ const Footer = () => {
                 <div className="container text-center">
                     <div className="row rowfooter align-items-end">
                         <div className="col coluna1">
-                            <h1>Oakwood Stogies</h1>
+                            <h1 className="corleone-font">Oakwood Stogies</h1>
                             A Oakwood Stogies é uma empresa especializada na produção e comercialização de charutos premium, reconhecida por sua tradição artesanal e compromisso com a qualidade. Utilizando tabacos selecionados de regiões renomadas, a Oakwood Stogies combina técnicas clássicas com um toque contemporâneo, resultando em charutos encorpados, bem equilibrados e com sabores marcantes.
                         </div>
                         <div className="col coluna2">
-                            <h4>Institucional</h4>
+                            <h4 className="corleone-font">Institucional</h4>
                             <p> <a href="">Sobre a Oakwood Stogies</a> </p>
                             <p> <a href="">Autenticidade dos Charutos</a></p>
                             <p> <a href="">Blog</a> </p>
                             <p> <a href="">Como fumar charutos - Guia para iniciantes</a></p> <br />
 
-                            <h4>Contato</h4>
+                            <h4 className="corleone-font">Contato</h4>
                             <span ><FontAwesomeIcon icon={faPhone} /> <a href="">(11) 99999-9999</a>  </span> <br />
                             <span> <FontAwesomeIcon icon={faEnvelope} /> <a href="">oakwood.stogies@gmail.com</a> </span>
                         </div>
                         <div className="col coluna3">
-                            <h4>Minha Conta</h4>
+                            <h4 className="corleone-font">Minha Conta</h4>
 
                             <p> <a href="/Pedidos">Meus Pedidos</a> </p>
                             <p> <a href="/Endereco">Endereço de Entrega</a></p>
@@ -42,7 +42,7 @@ const Footer = () => {
                         </div>
 
                         <div className="col coluna4">
-                            <h4>Redes Sociais</h4>
+                            <h4 className="corleone-font">Redes Sociais</h4>
                             <div className="card">
                                 <a className="socialContainer containerOne" href="#">
                                     <svg viewBox="0 0 16 16" className="socialSvg instagramSvg">

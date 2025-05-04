@@ -1,9 +1,20 @@
 "use client";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
 import "./produtos.css";
+import Link from "next/link"; 
 
-const productsData = [
+// Simulação de marcas agrupando produtos
+const marcas = {
+  Ouro: [1, 10], // IDs fictícios de produtos da marca Ouro
+  Fino: [2, 8],
+  Havana: [3],
+  Reserva: [4],
+  Robusto: [5, 9],
+  Tabaco: [6, 12],
+  Herrera: [7, 11],
+};
+
+const productsSt = [
   {
     id: 1,
     name: "Capa de Oro",
@@ -48,13 +59,13 @@ const productsData = [
   },
   {
     id: 8,
-    name: "El Toro Fino", 
+    name: "El Toro Fino",
     price: 459.99,
     image: "/image_charutos_carousel/condedeltabaco.png",
   },
   {
     id: 9,
-    name: "La Cabana Vieja", 
+    name: "La Cabana Vieja",
     price: 259.99,
     image: "/image_charutos_carousel/senhorrobusto.png",
   },
@@ -78,75 +89,47 @@ const productsData = [
   },
 ];
 
-const Produtos = () => {
-    const router = useRouter();
-    const [quantities, setQuantities] = useState(
-        productsData.reduce((acc, product) => {
-            acc[product.id] = 1;
-            return acc;
-        }, {})
-    );
+export default function Produtos() {
+  return (
+    <section className="container-fluid py-5">
+      <div className="container">
+        <h2 className="mb-4">Nossos Charutos por Marca</h2>
+        {Object.entries(marcas).map(([marca, ids]) => {
+          const produtosDaMarca = productsSt.filter((p) => ids.includes(p.id));
+          return (
+            <div key={marca} className="mb-5">
+              <h4 className="mb-3">{marca}</h4>
+              <div className="row">
+                {produtosDaMarca.map((produto) => (
+                  <div className="col-md-4 mb-4" key={produto.id}>
+                    <div className="card h-100">
+                      <img
+                        src={produto.image}
+                        className="card-img-top"
+                        alt={produto.name}
+                        style={{ height: "200px", objectFit: "cover" }}
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title">{produto.name}</h5>
+                        <p className="card-text">
+                          R$ {produto.price.toFixed(2)}
+                        </p>
 
-    const increment = (id) => {
-        setQuantities((prev) => ({
-            ...prev,
-            [id]: prev[id] + 1,
-        }));
-    };
-
-    const decrement = (id) => {
-        setQuantities((prev) => ({
-            ...prev,
-            [id]: prev[id] > 1 ? prev[id] - 1 : 1,
-        }));
-    };
-
-    const addToCart = (id) => {
-        // Navigate to payment page on add to cart
-        router.push("/Pagamento");
-    };
-
-    return (
-
-        
-        <section className="produtos-section">
-            <h2 className="produtos-title">Nossos Produtos</h2>
-            <div className="produtos-grid">
-                {productsData.map((product) => (
-                    <div key={product.id} className="produto-card">
-                        <img
-                            src={product.image}
-                            alt={product.name}
-                            className="produto-image"
-                        />
-                        <h3 className="produto-name">{product.name}</h3>
-                        <p className="produto-price">R$ {product.price.toFixed(2)}</p>
-                        <div className="quantidade-controls">
-                            <button
-                                className="quantidade-btn"
-                                onClick={() => decrement(product.id)}
-                            >
-                                -
-                            </button>
-                            <span className="quantidade-value">{quantities[product.id]}</span>
-                            <button
-                                className="quantidade-btn"
-                                onClick={() => increment(product.id)}
-                            >
-                                +
-                            </button>
-                        </div>
-                        <button
-                            className="add-to-cart-btn"
-                            onClick={() => addToCart(product.id)}
+                        <Link
+                          href={`/Produtos/${produto.id}`}
+                          className="btn btn-dark mt-2"
                         >
-                            Adicionar ao carrinho
-                        </button>
+                          Ver Produto
+                        </Link>
+                      </div>
                     </div>
+                  </div>
                 ))}
+              </div>
             </div>
-        </section>
-    );
-};
-
-export default Produtos;
+          );
+        })}
+      </div>
+    </section>
+  );
+}

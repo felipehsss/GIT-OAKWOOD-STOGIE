@@ -44,4 +44,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.corleone-font{
+  font-family: 'Corleone', sans-serif;
+}
 
+.berkervville-font{
+  font-family: 'Berkervville', sans-serif;
+}

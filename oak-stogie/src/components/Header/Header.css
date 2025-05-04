@@ -1,47 +1,74 @@
 .header {
-    background-color: black;
-    width: 100%;
-    font-family: 'Berkervville', sans-serif;
+  background-color: black;
+  width: 100%;
+  font-family: "Berkervville", sans-serif;
 }
 .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav a {
-    color: white;
+  color: white;
 }
 .login-signup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .img-logo {
-    width: 200px;
+  width: 200px;
 }
 .navbar-background-color {
-    background-color: black;
+  background-color: black;
 }
+.navbar {
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
 
 /* Efeito de hover personalizado */
-.nav-link {
-    position: relative;
-    padding-bottom: 2px;
-    text-decoration: none !important;
+.nav-link-efeito-hover {
+  position: relative;
+  padding-bottom: 2px;
+  text-decoration: none !important;
 }
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: calc(100% - 0.5rem);
-    height: 1px;
-    bottom: 0;
-    left: 0.25rem;
-    background-color: white;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 1s ease;
+.nav-link-efeito-hover::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 0.5rem);
+  height: 1px;
+  bottom: 0;
+  left: 0.25rem;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s ease;
 }
-.nav-link:hover::after {
-    transform: scaleX(1);
+.nav-link-efeito-hover:hover::after {
+  transform: scaleX(1);
+}
+
+/*Efeito pro products*/
+.nav-link-efeito-hover-products {
+  position: relative;
+  padding-bottom: 1px;
+  text-decoration: none !important;
+}
+.nav-link-efeito-hover-products::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 0.5rem);
+  height: 0.5px;
+  bottom: 0;
+  left: 0.25rem;
+  background-color: rgb(255, 0, 0);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s ease;
+}
+.nav-link-efeito-hover-products:hover::after {
+  transform: scaleX(1);
 }
