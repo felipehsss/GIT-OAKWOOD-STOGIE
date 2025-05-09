@@ -17,10 +17,10 @@ body {
 
 .produtos-grid {
     display: grid;
-    grid-template-columns: repeat(4 , 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     justify-items: center;
-    }
+}
 
 .produto-card {
     background-color: #000;
@@ -103,3 +103,29 @@ body {
 .add-to-cart-btn:hover {
     background-color: #666;
 }
+
+
+
+.meu-card {
+    display: block !important;
+    flex-direction: unset !important;
+    align-items: center !important;
+    text-align: center !important;
+    justify-content: center !important;
+    
+  }
+
+
+.imagemslk {
+    width: 100% !important;
+    /* height: auto !important; */
+    object-fit: cover !important;
+    border-radius: 4px !important;
+    margin-bottom: 1rem !important;
+    border: whitesmoke solid 0px !important;
+}
+
+.imagemslk:hover {
+    transform: scale(1.1) !important;
+    transition: transform 0.3s ease-in-out !important;
+  }

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 
-// Simulando os dados do produto (depois você pode puxar de um backend ou JSON)
 const produtos = [
   {
     id: 1,

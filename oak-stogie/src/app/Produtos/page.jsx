@@ -102,10 +102,10 @@ export default function Produtos() {
               <div className="row">
                 {produtosDaMarca.map((produto) => (
                   <div className="col-md-4 mb-4" key={produto.id}>
-                    <div className="card h-100">
+                    <div className="card meu-card h-100">
                       <img
                         src={produto.image}
-                        className="card-img-top"
+                        className="card-img-top imagemslk"
                         alt={produto.name}
                         style={{ height: "200px", objectFit: "cover" }}
                       />
