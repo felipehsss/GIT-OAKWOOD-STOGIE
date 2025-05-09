@@ -22,10 +22,8 @@ const Header = () => {
                 Products
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a className="dropdown-item" href="/products/cars">Cars</a></li>
-                <li><a className="dropdown-item" href="/products/motorcycles">Motorcycles</a></li>
-                <li><a className="dropdown-item" href="/products/aircraft">Aircraft</a></li>
-                <li><a className="dropdown-item" href="/products/boats">Boats</a></li>
+                <li><a className="dropdown-item" href="/Produtos">Stogies</a></li>
+                <li><a className="dropdown-item" href="/Acessorios">Accessories</a></li>
               </ul>
             </li>
 

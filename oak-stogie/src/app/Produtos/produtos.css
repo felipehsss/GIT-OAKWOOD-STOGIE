@@ -11,6 +11,7 @@ body {
 }
 
 .produtos-title {
+
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -103,3 +104,32 @@ body {
 .add-to-cart-btn:hover {
     background-color: #666;
 }
+
+span{
+    color: rgb(105, 105, 105);
+    pointer-events: visible;
+    size: 10px;
+}
+span:hover{
+    color: red;
+    
+}
+.imagem-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .heart-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgb(105, 105, 105);
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .heart-icon:hover {
+    color: red;
+  }
+  
